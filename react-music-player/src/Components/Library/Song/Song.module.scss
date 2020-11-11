@@ -1,0 +1,35 @@
+@import '../../../styles/variables';
+
+.Selected {
+    background: $dark;
+}
+
+.LibrarySong {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem 1rem 2rem;
+    cursor: pointer;
+    transition: all 0.75s ease-out;
+
+    img {
+        width: 30%;
+    }
+
+    &:hover {
+        background: #3A5062;
+    }
+}
+
+.SongDescription {
+    padding-left: 1rem;
+
+    h3 {
+        color: $TextPrimary;
+        font-size: 1rem;
+    }
+
+    h4 {
+        color: $TextSecondary;
+        font-size: 0.7rem;
+    }
+}
