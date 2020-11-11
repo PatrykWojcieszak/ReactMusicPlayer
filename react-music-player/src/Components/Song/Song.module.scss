@@ -1,0 +1,47 @@
+@import '../../styles/variables';
+
+.SongContainer {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 25%;
+      border-radius: 50%;
+      transition: all 2s ease;
+    }
+
+    h2 {
+      color: $TextPrimary;
+      padding: 3rem 1rem 1rem 1rem;
+    }
+
+    h3 {
+      color: $TextSecondary;
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .SongContainer {
+      img {
+        width: 60%;
+      }
+    }
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .RotateSong {
+    animation: rotate 20s linear forwards infinite;
+  }
+  
