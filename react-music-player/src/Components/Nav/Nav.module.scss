@@ -1,0 +1,47 @@
+@import '../../styles/variables';
+
+Nav {
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    h1{
+      color: $TextPrimary;
+    }
+
+    button {
+      background: $dark;
+      color: $TextPrimary;
+      cursor: pointer;
+      padding: 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      transition: all 0.3s ease;
+      font-size: large;
+      outline: none;
+
+      svg{
+        margin-left: 10px;
+      }
+
+      &:hover {
+        background: rgb(65, 65, 65);
+        color: white;
+      }
+    }
+
+    .LibraryActive {
+      background: rgb(65, 65, 65);
+      color: white;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    Nav {
+      button {
+        z-index: 10;
+      }
+    }
+  }
+  
